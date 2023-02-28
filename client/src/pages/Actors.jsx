@@ -1,10 +1,13 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Card, CardGroup, Table } from 'react-bootstrap'
+import { Button, Card, CardGroup, Modal, Table } from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 
 const Actors = () => {
 
     const [actors, setActors] = useState([{}])
+    const [modal, setModal] = useState(false)
+    const [modalActor, setModalActor] = useState('')
 
     useEffect(() => {
         axios.get('/actors')
@@ -16,16 +19,43 @@ const Actors = () => {
             .catch((err) => console.log(err))
     }, [])
 
+    const handleOpen = (actor) => {
+        let mActor
+        for (let key in actors) {
+            if (actors[key].name === actor.target.text) {
+                mActor = actors[key]
+            }
+        }
+        setModalActor(mActor)
+        setModal(true)
+    }
+    const handleClose = () => setModal(false)
+
     const createCard = (actor) => {
-        // console.log(actor)
         return (
-            <Card style={{width: '18rem'}}>
-                <Card.Img variant='top' src={actor.img} />
-                <Card.Body>
-                    <Card.Title>{actor.name}</Card.Title>
-                    <Card.Text>{actor.bioshort}...</Card.Text>
-                </Card.Body>
-            </Card>
+            <>
+                <Card style={{width: '18rem'}}>
+                    <Card.Img variant='top' src={actor.img} />
+                    <Card.Body>
+                        <Card.Title>
+                            <Link onClick={handleOpen}>{actor.name}</Link>
+                        </Card.Title>
+                        <Card.Text>{actor.bioshort}...</Card.Text>
+                    </Card.Body>
+                </Card>
+
+                <Modal show={modal} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>{modalActor.name}</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        {modalActor.bio}
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant='secondary' onClick={handleClose}>Close</Button>
+                    </Modal.Footer>
+                </Modal>
+            </>
         )
     }
         
