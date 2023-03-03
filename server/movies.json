@@ -1,0 +1,43 @@
+{
+    "movies": [
+        {
+            "title": "The 40-Year-Old Virgin",
+            "img": "https://th.bing.com/th/id/OIP.xcasPzM_DC8TytjW9WIPhQAAAA?pid=ImgDet&rs=1",
+            "description": "Goaded by his buddies, a nerdy guy who's never 'done the deed' only finds the pressure mounting when he meets a single mother.",
+            "shortDescription": "Goaded by his buddies, a nerdy guy who's never 'done the deed' only finds the pressure mounting when",
+            "director": ["Judd Apatow"],
+            "length": "116",
+            "rating": "R",
+            "reviews": "IMDB: 7.1/10",
+            "cast": ["Steve Carell", "Catherine Keener", "Paul Rudd", "Romany Malco", "Seth Rogen", "Elizabeth Banks", "Leslie Mann", "Jane Lynch", "Gerry Bednob", "Shelley Malil", "Kat Dennings", "Jordan Masterson", "Chelsea Smith"],
+            "platforms": ["Peacock", "DirectTV", "Hulu", "FuboTV", "USA"],
+            "postCredit": "No"
+        },
+        {
+            "title": "Despicable Me",
+            "img": "https://images8.alphacoders.com/473/473774.jpg",
+            "description": "Longtime supervillain Gru formulates a plan to steal the Moon. Meanwhile, he starts a family by adopting three orphan girls, and must decide where his commitments lie.",
+            "shortDescription": "Longtime supervillain Gru formulates a plan to steal the Moon. Meanwhile, he starts a family by adop",
+            "director": ["Chris Renaud", "Pierre Coffin"],
+            "length": "95",
+            "rating": "PG",
+            "reviews": "IMDB: 7.6/10",
+            "cast": ["Steve Carell", "Jason Segel", "Russell Brand", "Julie Andrews", "Will Arnett", "Kristen Wiig", "Miranda Cosgrove", "Dana Gaier", "Elsie Fisher"],
+            "platforms": ["Peacock", "Spectrum"],
+            "postCredit": "No"
+        },
+        {
+            "title": "The Big Short",
+            "img": "https://hbomax-images.warnermediacdn.com/images/GYZ9c7g1rCLF4YAEAAAAI/tile?size=640x360&partner=hbomaxcom&v=36f9f64fa8d25b2745f3bf5851b710f8&host=art-gallery.api.hbo.com&language=en-us",
+            "description": "In 2006-2007 a group of investors bet against the US mortgage market. In their research, they discover how flawed and corrupt the market is.",
+            "shortDescription": "In 2006-2007 a group of investors bet against the US mortgage market. In their research, they discov",
+            "director": ["Adam McKay"],
+            "length": "130",
+            "rating": "R",
+            "reviews": "IMDB 7.8/10",
+            "cast": ["Steve Carell", "Ryan Gosling", "Rudy Eisenzopf", "Casey Groves", "Charlie Talbert", "Harold Gervais", "Maria Frangos", "Christian Bale", "Tracy Letts", "Marisa Tomei", "Jeremy Strong", "Rafe Spall", "Brad Pitt", "Selena Gomez"],
+            "platforms": ["Free"],
+            "postCredit": "No"
+        }
+    ]
+}

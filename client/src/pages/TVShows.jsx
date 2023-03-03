@@ -48,23 +48,6 @@ const TVShows = () => {
         }
     }
 
-    const formatShows = (shows) => {
-        console.log("format movies:", shows)
-        console.log(typeof shows)
-        if (shows[0] != null) {
-            console.log(true)
-            console.log(shows[0])
-            return (
-                shows[0].map((s, idx) => {
-                    console.log(s)
-                    return (
-                        <span key={idx}> <Link to={"/tvshows"}>{s}</Link>,  </span>
-                )
-                })
-            )
-        }
-    }
-
     const createCard = (show) => {
         return (
             <>
