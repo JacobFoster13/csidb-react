@@ -31,6 +31,23 @@ const Actors = () => {
     }
     const handleClose = () => setModal(false)
 
+    const formatMovies = (movies) => {
+        console.log("format movies:", movies)
+        console.log(typeof movies)
+        if (movies[0] != null) {
+            console.log(true)
+            console.log(movies[0])
+            return (
+                movies[0].map((m, idx) => {
+                    console.log(m)
+                    return (
+                        <span key={idx}> <Link to={"/movies"}>{m}</Link>,  </span>
+                )
+                })
+            )
+        }
+    }
+
     const createCard = (actor) => {
         return (
             <>
@@ -49,7 +66,12 @@ const Actors = () => {
                         <Modal.Title>{modalActor.name}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        {modalActor.bio}
+                        <p>{modalActor.bio}</p>
+                        <hr />
+                        <p>
+                            <strong>Movies:</strong>
+                            {formatMovies(Array(modalActor.movies))}
+                        </p>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant='secondary' onClick={handleClose}>Close</Button>
