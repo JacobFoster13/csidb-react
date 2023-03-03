@@ -10,7 +10,8 @@ def index():
 
 @app.route('/tvshows')
 def shows():
-    return {"shows": ['The Office', 'The Flash', 'South Park']}
+    fp = open('tvshows.json')
+    return json.load(fp)
 
 
 

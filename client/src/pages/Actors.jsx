@@ -86,14 +86,18 @@ const Actors = () => {
                         <p>{modalActor.bio}</p>
                         <hr />
                         <p>
-                            <strong>Movies:</strong>
+                            <strong>Movies: </strong>
                             {formatMovies(Array(modalActor.movies))}
                         </p>
                         <p>
-                            <strong>TV Shows:</strong>
+                            <strong>TV Shows: </strong>
                             {formatShows(Array(modalActor.shows))}
                         </p>
-                        <p><strong>Social Media:</strong> {modalActor.socialMedia}</p>
+                        {modalActor.socialMedia === '' ? <span></span> : <p><strong>Social Media: </strong>{modalActor.socialMedia}</p>}
+                        <p>
+                            <strong>Birthday: </strong>
+                            {modalActor.birthday}
+                        </p>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant='secondary' onClick={handleClose}>Close</Button>

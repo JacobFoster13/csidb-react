@@ -1,0 +1,43 @@
+{
+    "tvshows" : [
+        {
+            "title": "The Office",
+            "img": "https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fnetflixlife.com%2Ffiles%2Fimage-exchange%2F2021%2F04%2Fie_64551.jpeg",
+            "description": "A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.",
+            "shortDescription": "A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inap",
+            "cast": ["Steve Carell", "Jenna Fischer", "John Krasinski", "Rainn Wilson", "Leslie David Baker", "Brian Baumgartner", "Angela Kinsey", "Kate Flannery", "Phyllis Smith", "Creed Bratton", "Oscar Nunez", "BJ Novak", "Mindy Kaling", "Ed Helms", "Paul Lieberstein", "Craig Robinson", "Ellie Kemper", "Zach Woods"],
+            "seasons": "9",
+            "episodes": "188",
+            "platforms": ["Peacock"],
+            "status": "Completed",
+            "rating": "TV-14",
+            "reviews": "IMDB: 9.0/10"
+        },
+        {
+            "title": "Scandal",
+            "img": "https://i0.wp.com/lezwatchtv.com/wp-content/uploads/2017/11/scandal.jpeg?fit=960%2C400&ssl=1",
+            "description": "A former White House Communications Director starts her own crisis management firm only to realize her clients are not the only ones with secrets.",
+            "shortDescription": "A former White House Communications Director starts her own crisis management firm only to realize h",
+            "cast": ["Kerry Washington", "Darby Stanchfield", "Katie Lowes", "Guillermo Diaz", "Jeff Perry", "Joshua Malina", "Bellamy Young", "Tony Goldwyn", "Scott Foley", "Joe Morton", "George Newbern", "Cornelius Smith Jr", "Portia de Rossi", "Columbus Short", "Kate Burton"],
+            "seasons": "7",
+            "episodes": "124",
+            "platforms": ["Hulu"],
+            "status": "Completed",
+            "rating": "TV-14",
+            "reviews": "IMDB: 7.7/10"
+        },
+        {
+            "title": "South Park",
+            "img": "https://miro.medium.com/max/960/1*qK_bkpuRBjdzB5_FfoIvfQ.jpeg",
+            "description": "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
+            "shortDescription": "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of Sou",
+            "cast": ["Trey Parker", "Matt Stone", "Isaac Hayes", "Mona Marshall", "April Stewart", "Adrien Beard", "Eliza Schneider", "Jennifer Howell", "Jessica Makinson"],
+            "seasons": "26",
+            "episodes": "322",
+            "platforms": ["HBO Max", "Prime Video", "FuboTV", "Comedy Central"],
+            "status": "Currently Filming",
+            "rating": "TV-14",
+            "reviews": "IMDB: 8.7/10"
+        }
+    ]
+}
